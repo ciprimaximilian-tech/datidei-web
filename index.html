@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datei-Upload</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div id="login">
+    <h2>Passwort eingeben</h2>
+
+    <input type="password" id="password" placeholder="Passwort">
+
+    <button onclick="login()">
+        Anmelden
+    </button>
+
+    <p id="error"></p>
+</div>
+
+<div id="app" style="display:none;">
+
+    <h1>Alle Dateien</h1>
+
+    <div id="drop-area">
+
+        <p>📁 Ziehe hier deine Datei hinein</p>
+
+        <input type="file" id="fileInput">
+
+    </div>
+
+    <button id="uploadButton">
+        Hochladen
+    </button>
+
+    <h2>Dateien</h2>
+
+    <ul id="fileList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
